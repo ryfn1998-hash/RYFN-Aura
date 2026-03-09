@@ -45,3 +45,5 @@ world.afterEvents.entityHurt.subscribe((event) => {
         event.hurtEntity.sendMessage("§l§c[警報] §f自動更換圖騰模組已啟動！");
     }
 });
+// 在循環中加入
+target.nameTag = `§cHP: ${Math.floor(target.getComponent("health").currentValue)}`;
